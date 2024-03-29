@@ -13,4 +13,12 @@ items:
   target: "/histoire/"
   kind: page
   children: []
+- title: Soutenir
+  target: "/nous-soutenir/"
+  kind: page
+  children: []
+- title: Crédits
+  target: "/credits/"
+  kind: page
+  children: []
 
