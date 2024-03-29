@@ -5,10 +5,6 @@ items:
   target: "/magazine/"
   kind: page
   children: []
-- title: Les séries
-  target: "/les-series/"
-  kind: page
-  children: []
 - title: Histoire
   target: "/histoire/"
   kind: page
