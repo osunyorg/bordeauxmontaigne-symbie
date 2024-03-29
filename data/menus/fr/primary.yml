@@ -1,8 +1,4 @@
 ---
 title: Menu principal
-items:
-- title: Organisations
-  target: "/organisations/"
-  kind: page
-  children: []
+items: []
 
