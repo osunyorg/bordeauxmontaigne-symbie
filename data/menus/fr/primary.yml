@@ -9,4 +9,8 @@ items:
   target: "/les-series/"
   kind: page
   children: []
+- title: Histoire
+  target: "/histoire/"
+  kind: page
+  children: []
 
