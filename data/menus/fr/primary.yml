@@ -1,10 +1,6 @@
 ---
 title: Menu principal
 items:
-- title: Projets
-  target: "/projets/"
-  kind: page
-  children: []
 - title: Équipe
   target: "/equipe/"
   kind: page
