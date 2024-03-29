@@ -5,6 +5,10 @@ items:
   target: "/magazine/"
   kind: page
   children: []
+- title: Séries
+  target: "/series/"
+  kind: page
+  children: []
 - title: Histoire
   target: "/histoire/"
   kind: page
