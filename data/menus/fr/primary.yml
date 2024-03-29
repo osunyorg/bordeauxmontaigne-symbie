@@ -1,4 +1,8 @@
 ---
 title: Menu principal
-items: []
+items:
+- title: Magazine
+  target: "/magazine/"
+  kind: page
+  children: []
 
