@@ -7,3 +7,6 @@ params:
     position: hero
   search:
     active: false  
+  logo:
+    header: "/assets/images/logo_symbie.svg"
+    footer: "/assets/images/logo_symbie.svg"
