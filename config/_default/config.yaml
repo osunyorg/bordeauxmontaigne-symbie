@@ -8,5 +8,5 @@ params:
   search:
     active: false  
   logo:
-    header: "/assets/images/logo_symbie.svg"
-    footer: "/assets/images/logo_symbie.svg"
+    header: "/assets/images/logo-blanc.svg"
+    footer: "/assets/images/logo.svg"
