@@ -28,11 +28,14 @@
       <canvas id="canvas"></canvas>
       <div class="footer">
 
-        <a href="https://osuny.s3.fr-par.scw.cloud/8hwpuyqgg3p2qh8z3e6qhnj0mwvg" target="_blank" >
-          <button id="btnPdf" class="btn black">Lire en ligne</button>
+        <a class="btn black" id="btnPdf" href="https://osuny.s3.fr-par.scw.cloud/8hwpuyqgg3p2qh8z3e6qhnj0mwvg" target="_blank">
+          Lire en ligne
         </a>
         <button id="btnInfos" class="btn white">Informations</button>
         <button id="btnCredits" class="btn white">Crédits</button>
+        <a class="btn black" href="/">
+          Revenir au site
+        </a>
       </div>
       <div id="infoLayout" class="hide">
         <div class="infoContentBox">
@@ -80,8 +83,10 @@
 
     {{- partial "footer/plausible.html" . -}}
 
-    {{ $js := resources.Get "js/three-app.js" | js.Build (dict "minify" hugo.IsProduction) | fingerprint }}
+    {{ $js := resources.Get "js/three-app-main.ts" | js.Build (dict "minify" hugo.IsProduction) | fingerprint }}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+    {{ $js2 := resources.Get "js/three-app-layout.ts" | js.Build (dict "minify" hugo.IsProduction) | fingerprint }}
+    <script src="{{ $js2.RelPermalink }}" integrity="{{ $js2.Data.Integrity }}"></script>
 
     {{- if not hugo.IsProduction -}}
       {{- partial "footer/debug.html" . -}}
