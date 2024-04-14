@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "fr" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ partial "head/css.html" }}
+    {{ partial "head/seo.html" . }}
+    {{ partial "head/favicons.html" . }}
+    {{ partial "head/rss.html" . }}
+    {{ partial "head/script.html" . }}
+    {{ partial "head/extras.html" . }}
+  </head>
+  <body class="{{ partial "GetBodyclass" . }} three-experience">
+    <div id="preloader">
+      <div class="loader">
+        <img id="preloader-image" src="/assets/images/experience/preloader.gif"></img>
+        <div id="loadertxt">Chargement en cours</div>
+        <div class="loadBar">
+          <div class="bar" id="bar"></div>
+        </div>
+      </div>
+    </div>
+    <div id="app">
+      <div id="header" class="header">
+        <img class="logo" src="/assets/images/experience/logo_symbie.svg"/>
+        <img id="closeBtn" class="hide" src="/assets/images/experience/close.svg"/>
+      </div>
+      <canvas id="canvas"></canvas>
+      <div class="footer">
+
+        <a class="btn black" id="btnPdf" href="https://osuny.s3.fr-par.scw.cloud/8hwpuyqgg3p2qh8z3e6qhnj0mwvg" target="_blank">
+          Lire en ligne
+        </a>
+        <button id="btnInfos" class="btn white">Informations</button>
+        <button id="btnCredits" class="btn white">Crédits</button>
+        <a class="btn black" href="/">
+          Revenir au site
+        </a>
+      </div>
+      <div id="infoLayout" class="hide">
+        <div class="infoContentBox">
+          <p>
+            Symbié est un magazine indépendant créé par des étudiants ayant
+            pour objectif de mettre en lumière les diverses réalités du handicap
+            à travers une approche authentique et respectueuse.
+          </p>
+          <p>
+            Notre démarche repose sur la collecte et le partage de témoignages
+            sincères de personnes en situation de handicap, mettant en avant leur
+            quotidien et leur perception de la représentation du handicap dans les
+            médias et les institutions. Nous sommes déterminés à rendre ce sujet plus
+            accessible et compréhensible pour tous.
+          </p>
+          <div class="contactBox">
+            <h3>Contact</h3>
+            <div id="contactGrid"></div>
+          </div>
+        </div>
+      </div>
+      <div id="creditsLayout" class="hide">
+        <div class="creditsContentBox">
+          <div class="creditsBox">
+            <h3>Crédits</h3>
+            <p>
+              Le 5 mars 2024, à Bordeaux, un groupe d'étudiants dévoués annonce le lancement d'un magazine indépendant, Symbié.
+              Ce projet est entièrement dédié à la sensibilisation et au changement de perception du handicap dans la société.
+              À travers une approche authentique et respectueuse, Symbié s'engage à mettre en lumière les diverses réalités du handicap.
+              Ce magazine offre une plateforme où les voix authentiques et respectueuses peuvent s'élever pour raconter les témoignages,
+              les défis et les victoires des personnes en situation de handicap, loin des clichés et des représentations simplistes souvent véhiculées.
+            </p>
+            <br>
+            <h3>Remerciements</h3>
+            <p>
+              Nous tenons à exprimer notre sincère gratitude aux contributeurs, collaborateurs et lecteurs
+              qui ont rendu possible la parution de la première édition de notre magazine.
+            </p>
+            <p>
+              Nous remercions : Quentin, Audrey, ZephYr, Matthieu, Arnaud Levy et l'IUT Bordeaux Montaigne.
+            </p>
+            <p>
+              Nous exprimons ÉGALEMENT notre sincère gratitude envers chaque membre de l'équipe de Symbié :
+            </p>
+            <div id="creditsGrid"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{- partial "footer/plausible.html" . -}}
+
+    {{ $js := resources.Get "js/three-app-main.ts" | js.Build (dict "minify" hugo.IsProduction) | fingerprint }}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+    {{ $js2 := resources.Get "js/three-app-layout.ts" | js.Build (dict "minify" hugo.IsProduction) | fingerprint }}
+    <script src="{{ $js2.RelPermalink }}" integrity="{{ $js2.Data.Integrity }}"></script>
+
+    {{- if not hugo.IsProduction -}}
+      {{- partial "footer/debug.html" . -}}
+    {{- end -}}
+  </body>
+</html>

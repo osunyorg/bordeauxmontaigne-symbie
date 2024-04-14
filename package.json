@@ -5,9 +5,14 @@
   "author": "noesya",
   "license": "MIT",
   "dependencies": {
-    "osuny-hugo-theme-aaa": "./themes/osuny-hugo-theme-aaa"
+    "osuny-hugo-theme-aaa": "./themes/osuny-hugo-theme-aaa",
+    "three": "^0.163.0"
   },
   "scripts": {
     "osuny": "npx osuny-hugo-theme"
+  },
+  "devDependencies": {
+    "@types/three": "^0.163.0",
+    "typescript": "^5.4.5"
   }
 }

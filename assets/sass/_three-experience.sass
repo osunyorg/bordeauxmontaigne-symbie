@@ -1,0 +1,206 @@
+.three-experience
+    margin: 0
+    display: flex
+    place-items: center
+    min-height: 100vh
+
+    a
+        font-weight: 500
+        color: #646cff
+        text-decoration: inherit
+        &:not(.btn):hover
+            color: #535bf2
+
+    h1
+        font-size: 3.2em
+        line-height: 1.1
+
+    #app
+        font-family: Poppins, sans-serif
+        margin: 0
+        padding: 0
+        background-color: transparent
+        width: 100%
+        height: 100%
+        position: relative
+
+    .header
+        position: absolute
+        display: flex
+        width: 100%
+        align-items: center
+        justify-content: center
+        top: 0
+        padding: 20px 0
+        z-index: 999
+        background-color: transparent
+
+    .logo
+        width: 200px
+
+    .footer
+        position: absolute
+        bottom: 2%
+        display: flex
+        width: 100%
+        align-items: center
+        justify-content: center
+        gap: 20px
+        z-index: 2
+        a[target="_blank"]
+            display: block
+            &::hover
+                color: white
+            &::after
+                display: none
+
+    .btn
+        width: fit-content
+        border-radius: 6px
+        border: 0
+        padding: 5px 13px
+        font-weight: bold
+        font-size: 16px
+        text-align: center
+
+    .white
+        background-color: white
+        color: black
+
+    .black
+        background-color: black
+        color: white
+
+    #canvas
+        display: block
+        margin: 0
+        width: 100%
+        height: 100%
+        background-color: transparent
+        cursor: grab
+
+
+    .hide
+        display: none
+
+    .showBtn
+        display: block
+        position: absolute
+        right: 5%
+        top: 25%
+        cursor: pointer
+
+    .show
+        background-color: white
+        color: black
+        z-index: 5
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        overflow-y: scroll
+        padding: 40px
+        box-sizing: border-box
+
+    .infoContentBox,
+    .creditsContentBox
+        position: relative
+        width: 100%
+        display: flex
+        flex-direction: column
+        gap: 20px
+        height: fit-content
+        font-size: larger
+        align-items: center
+        justify-content: center
+        padding-top: 65px
+
+    .contactBox
+        display: flex
+        flex-direction: column
+        gap: 10px
+        align-items: center
+        justify-content: center
+
+    #contactGrid
+        width: 100%
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+        grid-gap: 10px
+        padding: 10px
+
+    .contactInfo,
+    .creditInfo
+        padding: 5px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        text-align: left
+
+    .contactInfo a
+        color: #007bff
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+
+    .creditInfo p
+        margin: 5px 0
+        font-style: italic
+        opacity: 60%
+
+    #preloader
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 9999
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: white
+        font-family: Poppins, sans-serif
+        transition: all 0.3s
+        opacity: 1
+        pointer-events: none
+        img
+            width: 30%
+            margin: 0
+            padding: 0
+            transition: all 0.3s
+
+    .loader
+        display: flex
+        flex-direction: column
+        width: fit-content
+        align-items: center
+        transition: all 0.3s
+        #loadertxt
+            display: flex
+            flex-direction: column
+            width: fit-content
+            color: black
+            font-weight: 700
+            transition: all 0.3s
+
+    .loadBar
+        width: 100px
+        border: 3px solid black
+        margin-top: 25px
+
+    .bar
+        background-color: black
+        width: 0%
+        height: 7px
+        box-sizing: border-box
+        border: 2px solid white
+        transition: 0.3s
+
+    @media (max-width: 600px)
+        #contactGrid
+            grid-template-columns: 1fr
