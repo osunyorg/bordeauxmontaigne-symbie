@@ -12,7 +12,7 @@ fr:
     projects: /series/:year-:slug/
     projects_categories: /series/:slug/
     persons: /equipe/:slug/
-    persons_categories: /equipe/:slug/
+    persons_categories: /equipe/categories/:slug/
   taxonomies:
     administrator: administrators
     author: authors
