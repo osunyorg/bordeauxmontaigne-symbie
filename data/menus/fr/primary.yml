@@ -5,16 +5,20 @@ items:
   target: "/magazine/"
   kind: page
   children: []
+  file: content/fr/pages/magazine/_index.html
 - title: Séries
   target: "/series/"
   kind: page
   children: []
+  file: content/fr/projects/_index.html
 - title: Histoire
   target: "/histoire/"
   kind: page
   children: []
+  file: content/fr/pages/histoire/_index.html
 - title: Crédits
   target: "/credits/"
   kind: page
   children: []
+  file: content/fr/pages/credits/_index.html
 
