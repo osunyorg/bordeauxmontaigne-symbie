@@ -4,24 +4,28 @@ items:
 - title: Magazine
   target: "/magazine/"
   kind: page
+  new_tab: false
   children: []
   path: "/pages/magazine"
   file: content/fr/pages/magazine/_index.html
 - title: Séries
   target: "/series/"
   kind: page
+  new_tab: false
   children: []
   path: "/projects"
   file: content/fr/projects/_index.html
 - title: Histoire
   target: "/histoire/"
   kind: page
+  new_tab: false
   children: []
   path: "/pages/histoire"
   file: content/fr/pages/histoire/_index.html
 - title: Crédits
   target: "/credits/"
   kind: page
+  new_tab: false
   children: []
   path: "/pages/credits"
   file: content/fr/pages/credits/_index.html
