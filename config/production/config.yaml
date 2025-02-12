@@ -2,6 +2,11 @@
 
 baseURL: https://symbie.mmibordeaux.com
 
+## OSUNY
+osuny:
+  website:
+    id: c3943410-690c-4fc3-bd8a-896b5cb6af40
+
 ## LANGUAGE
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: false
