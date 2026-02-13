@@ -2,31 +2,39 @@
 title: Menu principal
 items:
 - title: Magazine
+  slug: magazine
   target: "/magazine/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/magazine"
   file: content/fr/pages/magazine/_index.html
 - title: Séries
+  slug: series
   target: "/series/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/projects"
   file: content/fr/projects/_index.html
 - title: Histoire
+  slug: histoire
   target: "/histoire/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/histoire"
   file: content/fr/pages/histoire/_index.html
 - title: Crédits
+  slug: credits
   target: "/credits/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/credits"
   file: content/fr/pages/credits/_index.html
 
