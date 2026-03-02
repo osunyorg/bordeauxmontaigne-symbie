@@ -93,8 +93,8 @@
     {{ $js2 := resources.Get "js/three-app-layout.ts" | js.Build (dict "minify" hugo.IsProduction) | fingerprint }}
     <script src="{{ $js2.RelPermalink }}" integrity="{{ $js2.Data.Integrity }}"></script>
 
-    {{- if not hugo.IsProduction -}}
-      {{- partial "footer/debug.html" . -}}
-    {{- end -}}
+    {{ if or (not hugo.IsProduction) site.Params.debug.active }}
+      {{ partial "debug/debug.html" . }}
+    {{ end -}}
   </body>
 </html>
