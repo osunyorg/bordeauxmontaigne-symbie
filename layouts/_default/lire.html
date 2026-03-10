@@ -10,7 +10,7 @@
     {{ partial "head/script.html" . }}
     {{ partial "head/extras.html" . }}
   </head>
-  <body class="{{ partial "GetBodyclass" . }} three-experience">
+  <body class="{{ partial "body/helpers/GetBodyclass" . }} three-experience">
     <div id="preloader">
       <div class="loader">
         <img id="preloader-image" src="/assets/images/experience/preloader.gif"></img>
@@ -86,15 +86,11 @@
       </div>
     </div>
 
-    {{- partial "footer/plausible.html" . -}}
-
     {{ $js := resources.Get "js/three-app-main.ts" | js.Build (dict "minify" hugo.IsProduction) | fingerprint }}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
     {{ $js2 := resources.Get "js/three-app-layout.ts" | js.Build (dict "minify" hugo.IsProduction) | fingerprint }}
     <script src="{{ $js2.RelPermalink }}" integrity="{{ $js2.Data.Integrity }}"></script>
 
-    {{- if not hugo.IsProduction -}}
-      {{- partial "footer/debug.html" . -}}
-    {{- end -}}
+    {{ partial "scripts/scripts.html" . }}
   </body>
 </html>
