@@ -15,62 +15,62 @@ for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
 Cache-Control = "max-age=31536000, no-transform, public"
 
 [[redirects]]
-from = "/projets/2024-serie-3/index.html"
+from = "/projets/2024-serie-3/"
 to = "/series/2024-quentin-dumontet/"
 
 [[redirects]]
-from = "/projets/index.html"
+from = "/projets/"
 to = "/series/"
 
 [[redirects]]
-from = "/series/2024-damian-tokatlian/index.html"
+from = "/series/2024-damian-tokatlian/"
 to = "/series/2024-damien-tokatlian/"
 
 [[redirects]]
-from = "/series/2024-serie-2/index.html"
+from = "/series/2024-serie-2/"
 to = "/series/2024-celia-nageuse/"
 
 [[redirects]]
-from = "/series/2024-celia/index.html"
+from = "/series/2024-celia/"
 to = "/series/2024-celia-nageuse/"
 
 [[redirects]]
-from = "/projets/2024-serie-5/index.html"
+from = "/projets/2024-serie-5/"
 to = "/series/2024-pianiste/"
 
 [[redirects]]
-from = "/series/2024-serie-3/index.html"
+from = "/series/2024-serie-3/"
 to = "/series/2024-quentin-dumontet/"
 
 [[redirects]]
-from = "/series/2024-serie-5/index.html"
+from = "/series/2024-serie-5/"
 to = "/series/2024-pianiste/"
 
 [[redirects]]
-from = "/projets/2024-serie-4/index.html"
+from = "/projets/2024-serie-4/"
 to = "/series/2024-matthieu-gerbort/"
 
 [[redirects]]
-from = "/series/2024-serie-4/index.html"
+from = "/series/2024-serie-4/"
 to = "/series/2024-matthieu-gerbort/"
 
 [[redirects]]
-from = "/projets/2024-serie-1/index.html"
+from = "/projets/2024-serie-1/"
 to = "/series/2024-damien-tokatlian/"
 
 [[redirects]]
-from = "/series/2024-audrey-dore/index.html"
+from = "/series/2024-audrey-dore/"
 to = "/series/2024-celia-nageuse/"
 
 [[redirects]]
-from = "/projets/2024-serie-2/index.html"
+from = "/projets/2024-serie-2/"
 to = "/series/2024-celia-nageuse/"
 
 [[redirects]]
-from = "/series/2024-serie-1/index.html"
+from = "/series/2024-serie-1/"
 to = "/series/2024-damien-tokatlian/"
 
 [[redirects]]
-from = "/series/2024-musician/index.html"
+from = "/series/2024-musician/"
 to = "/series/2024-pianiste/"
 
